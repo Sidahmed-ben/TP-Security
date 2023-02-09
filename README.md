@@ -48,3 +48,16 @@ VALUES ('userName','userEmail','userPassword');
  ```
  npm run start
  ```
+ 
+ ### Lancement du client :
+  - Aller dans le dossier './vue-3-crud' 
+  - Installer les packages :
+ ```
+ npm i 
+ ```
+ - Lancer le client :
+```
+npm run serve 
+```
+ 
+ 
