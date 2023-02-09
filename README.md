@@ -4,12 +4,12 @@
   Le but du projet est de créer une mini application d'authentification sécurisée.
   
 ### Le travail réalisé :
-  - Réstreindre l'utilisation de quelques caractéres spéciaux l'ors de la saisie des informations.
-  - L'obligation d'utiliser un mot de passe avec une taille suppérieure à 8 caractères.
+  - Restreindre l'utilisation de quelques caractères. spéciaux lors de la saisie des informations.spéciaux l'ors de la saisie des informations.
+  - L'obligation d'utiliser un mot de passe avec une taille supérieure à 8 caractères.
   - Hasher le code avant de le sauvegarder dans la base de données.
-  - Vérifier si l'utilisateur est bien authentifié avant d'accéder au path qui le redérige vers son espace perso (http.../profile). 
+  - Vérifier si l'utilisateur est bien authentifié avant d'accéder au path qui le redirige vers son espace perso (http.../profile).
   - Utilisation des sessions (le module passport de nodeJS) pour vérifier si l'utilisateur est bien authentifié durant la période de navigation.
-  - Afficher les érreurs de saisie sur le formulaire.  
+  - Afficher les erreurs de saisie sur le formulaire. 
   - Ajouter le boutton Logout pour déconnecter l'utilisateur.
 
 ### Téchnologies 
@@ -27,7 +27,7 @@ npm i
  Dans la ligne de commande Sql lancez les commandes suivantes :
  ```
  # Création de l'utilisateur "tp_user". Si vous changez le mot de passe il faut le changer aussi dans le fichier d'environnement './server/.env'
- CREATE USER tp_user  WITH ENCRYPTED PASSWORD 'MP00@sid'; 
+ CREATE USER tp_user  WITH ENCRYPTED PASSWORD 'XXXXX'; 
 
 # Création de la base de données "tp_user"
  CREATE DATABASE tp_database; 
