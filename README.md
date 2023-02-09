@@ -2,6 +2,11 @@
 
 ### Introduction 
   Le but du projet est de créer une mini application d'authentification sécurisée.
+  
+### Le travail réalisé :
+  - Restriction de l'utilisation de quelques caractéres spéciaux l'ors de la saisie des informations.
+  - L'obligation d'utiliser un mot de passe avec une taille de 8 caractéres au minmum.
+  - Hasher le code avant de le sauvegarder dans la base de données.
 
 ### Téchnologies 
   - Installation de Vue.js.
