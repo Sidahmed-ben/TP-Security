@@ -16,9 +16,30 @@
 npm i 
 ```
   - Configuration de la base de données :<br>
- Dans la ligne de commande Sql lansez les commande suivante :
+ Dans la ligne de commande Sql lancez les commandes suivantes :
  ```
- # Création de l'utilisateur. Si vous changez le mot de passe il faut le changer aussi dans le fichier d'environnement './server/.env'
+ # Création de l'utilisateur "tp_user". Si vous changez le mot de passe il faut le changer aussi dans le fichier d'environnement './server/.env'
  CREATE USER tp_user  WITH ENCRYPTED PASSWORD 'MP00@sid'; 
+
+# Création de la base de données "tp_user"
+ CREATE DATABASE tp_database; 
+ 
+ # Accéder à la base de données crée
+ \c tp_database
+ 
+ # Attribuer les permissions au nouvel utilisateur.
+ GRANT ALL PRIVILEGES ON DATABASE tp_database  TO tp_user ;
+
+# Création de la table "users"
+CREATE TABLE users
+ (id BIGSERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(200) NOT NULL,
+  email VARCHAR(200) NOT NULL,
+  password VARCHAR(200) NOT NULL,
+  UNIQUE (email)
+);
+
+# Créer un utilisateur (Facultatif) juste pour le test 
+
 
  ```
