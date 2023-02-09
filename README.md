@@ -44,3 +44,7 @@ INSERT INTO users  (name,email,password)
 VALUES ('userName','userEmail','userPassword');
 
  ```
+  - Lancer le serveur (dans le dossier './server') 
+ ```
+ npm run start
+ ```
