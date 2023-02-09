@@ -40,6 +40,7 @@ CREATE TABLE users
 );
 
 # Créer un utilisateur (Facultatif) juste pour le test 
-
+INSERT INTO users  (name,email,password)
+VALUES ('userName','userEmail','userPassword');
 
  ```
