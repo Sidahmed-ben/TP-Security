@@ -3,7 +3,6 @@
 ### Introduction 
   Le but du projet est de créer une mini application d'authentification sécurisée.
 
-
 ### Téchnologies 
   - Installation de Vue.js.
   - Installation de Node.js.
@@ -59,5 +58,5 @@ VALUES ('userName','userEmail','userPassword');
 ```
 npm run serve 
 ```
- - Le client devrait être lancer en local, avec l'adresse :   [http://localhost:8080/login](http://localhost:8080/login).
+ - Le client devrait être lancer en local, sur l'adresse :   [http://localhost:8080/login](http://localhost:8080/login).
  
