@@ -4,12 +4,13 @@
   Le but du projet est de créer une mini application d'authentification sécurisée.
   
 ### Le travail réalisé :
-  - Restriction de l'utilisation de quelques caractéres spéciaux l'ors de la saisie des informations.
-  - L'obligation d'utiliser un mot de passe avec une taille suppérieur à 8 caractères.
+  - Réstreindre l'utilisation de quelques caractéres spéciaux l'ors de la saisie des informations.
+  - L'obligation d'utiliser un mot de passe avec une taille suppérieure à 8 caractères.
   - Hasher le code avant de le sauvegarder dans la base de données.
   - Vérifier si l'utilisateur est bien authentifié avant d'accéder au path qui le redérige vers son espace perso (http.../profile). 
   - Utilisation des sessions (le module passport de nodeJS) pour vérifier si l'utilisateur est bien authentifié durant la période de navigation.
-  - Rajouter le boutton Logout pour déconnecter l'utilisateur.
+  - Afficher les érreurs de saisie sur le formulaire.  
+  - Ajouter le boutton Logout pour déconnecter l'utilisateur.
 
 ### Téchnologies 
   - Installation de Vue.js.
