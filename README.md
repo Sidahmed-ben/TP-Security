@@ -59,5 +59,5 @@ VALUES ('userName','userEmail','userPassword');
 ```
 npm run serve 
 ```
- 
+ - Le client devrait être lancer en local, avec l'adresse :   [http://localhost:8080/login](http://localhost:8080/login).
  
