@@ -6,7 +6,7 @@ import ProfilePage from "../pages/ProfilePage";
 
 const routes = [
   {
-    path: "/login",
+    path: "/",
     name: "HomePage",
     component: HomePage,
     props: true,
@@ -36,7 +36,7 @@ const router = createRouter({
 // let isAuthenticated = false;
 router.beforeEach(async (to, from, next) => {
   // // Send a request to server in order to verify the authaurisation
-  if (to.path !== "/login" && to.meta.userMustAuth) {
+  if (to.path !== "/" && to.meta.userMustAuth) {
     await UsersDataService.checkUserHomeAutho()
       .then((response) => {
         // Status 200 authorized
@@ -52,7 +52,7 @@ router.beforeEach(async (to, from, next) => {
         console.log(err);
         // return next('/login');
         // router.push({ path: '/user' });
-        return next({ path: "/login" });
+        return next({ path: "/" });
       });
 
     // Vérify the id of the sessionType in the url.

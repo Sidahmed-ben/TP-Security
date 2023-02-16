@@ -191,7 +191,7 @@ export default {
       UsersDataService.registerUser(data)
         .then(() => {
           console.log(" User registered succeffuly");
-          this.$router.push("/login");
+          this.$router.push("/");
         })
         .catch((e) => {
           if (

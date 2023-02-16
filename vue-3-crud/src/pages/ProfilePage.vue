@@ -23,7 +23,7 @@ export default {
       UsersDataService.logoutUser()
         .then(() => {
           console.log(" Users Logout succeffuly");
-          this.$router.push("/login");
+          this.$router.push("/");
         })
         .catch((e) => {
           console.log(e.response.data);
